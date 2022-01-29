@@ -1,0 +1,5 @@
+on_game_start = {
+  events = {
+    cultural_overhaul_flag.3
+  }
+}
