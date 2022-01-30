@@ -355,8 +355,7 @@ gov_theocratic_dictatorship = {
   possible = {
     has_authority = auth_dictatorial
     OR = {
-      has_ethic = ethic_spiritualist
-      has_ethic = ethic_fanatic_spiritualist
+      is_spiritualist = yes
     }
   }
   weight = {
@@ -386,8 +385,7 @@ gov_theocratic_monarchy = {
   possible = {
     has_authority = auth_imperial
     OR = {
-      has_ethic = ethic_spiritualist
-      has_ethic = ethic_fanatic_spiritualist
+      is_spiritualist = yes
     }
   }
   weight = {
@@ -419,8 +417,7 @@ gov_theocratic_oligarchy = {
   possible = {
     has_authority = auth_oligarchic
     OR = {
-      has_ethic = ethic_spiritualist
-      has_ethic = ethic_fanatic_spiritualist
+      is_spiritualist = yes
     }
   }
   weight = {
@@ -445,8 +442,7 @@ gov_theocratic_republic = {
       has_authority = auth_direct_democratic
     }
     OR = {
-      has_ethic = ethic_spiritualist
-      has_ethic = ethic_fanatic_spiritualist
+      is_spiritualist = yes
     }
   }
   weight = {
@@ -477,12 +473,10 @@ gov_anarchy_communism = {
     }
     has_ethic = ethic_fanatic_socialism
     OR = {
-      has_ethic = ethic_authoritarian
-      has_ethic = ethic_fanatic_authoritarian
+      is_authoritarian = yes
     }
     OR = {
-      has_ethic = ethic_militarist
-      has_ethic = ethic_fanatic_militarist
+      is_militarist = yes
     }
   }
   should_force_rename = yes
@@ -642,17 +636,12 @@ gov_jingoism = {
       has_authority = auth_oligarchic
     }
     OR = {
-      has_ethic = ethic_xenophobe
-      has_ethic = ethic_fanatic_xenophobe
+      is_xenophobe = yes
     }
     OR = {
-      has_ethic = ethic_militarist
-      has_ethic = ethic_fanatic_militarist
+      is_militarist = yes
     }
-    NOR = {
-      has_ethic = ethic_egalitarian
-      has_ethic = ethic_fanatic_egalitarian
-    }
+    is_egalitarian = no
     NOR = {
       has_ethic = ethic_socialism
       has_ethic = ethic_fanatic_socialism
@@ -777,8 +766,7 @@ gov_military_commissariat = {
       has_authority = auth_direct_democratic
     }
     OR = {
-      has_ethic = ethic_militarist
-      has_ethic = ethic_fanatic_militarist
+      is_militarist = yes
     }
   }
   weight = {
@@ -867,8 +855,7 @@ gov_military_dictatorship = {
   possible = {
     has_authority = auth_dictatorial
     OR = {
-      has_ethic = ethic_militarist
-      has_ethic = ethic_fanatic_militarist
+      is_militarist = yes
     }
   }
   weight = {
@@ -906,8 +893,7 @@ gov_military_junta = {
   }
   possible = {
     OR = {
-      has_ethic = ethic_militarist
-      has_ethic = ethic_fanatic_militarist
+      is_militarist = yes
     }
     has_authority = auth_oligarchic
   }
@@ -938,8 +924,7 @@ gov_star_empire = {
   possible = {
     has_authority = auth_imperial
     OR = {
-      has_ethic = ethic_militarist
-      has_ethic = ethic_fanatic_militarist
+      is_militarist = yes
     }
   }
   weight = {
@@ -1146,8 +1131,7 @@ gov_irenic_bureaucracy = {
   possible = {
     has_authority = auth_oligarchic
     OR = {
-      has_ethic = ethic_pacifist
-      has_ethic = ethic_fanatic_pacifist
+      is_pacifist = yes
     }
   }
   weight = {
@@ -1195,8 +1179,7 @@ gov_irenic_dictatorship = {
   possible = {
     has_authority = auth_dictatorial
     OR = {
-      has_ethic = ethic_pacifist
-      has_ethic = ethic_fanatic_pacifist
+      is_pacifist = yes
     }
   }
   weight = {
@@ -1230,8 +1213,7 @@ gov_irenic_monarchy = {
   possible = {
     has_authority = auth_imperial
     OR = {
-      has_ethic = ethic_pacifist
-      has_ethic = ethic_fanatic_pacifist
+      is_pacifist = yes
     }
   }
   weight = {
@@ -1282,8 +1264,7 @@ gov_moral_democracy = {
       has_authority = auth_direct_democratic
     }
     OR = {
-      has_ethic = ethic_pacifist
-      has_ethic = ethic_fanatic_pacifist
+      is_pacifist = yes
     }
   }
   weight = {
@@ -1318,8 +1299,7 @@ gov_despotic_hegemony = {
   possible = {
     has_authority = auth_imperial
     OR = {
-      has_ethic = ethic_materialist
-      has_ethic = ethic_fanatic_materialist
+      is_materialist = yes
     }
   }
   weight = {
@@ -1368,8 +1348,7 @@ gov_executive_committee = {
   possible = {
     has_authority = auth_oligarchic
     OR = {
-      has_ethic = ethic_materialist
-      has_ethic = ethic_fanatic_materialist
+      is_materialist = yes
     }
   }
   weight = {
@@ -1439,8 +1418,7 @@ gov_rational_consensus = {
       has_authority = auth_direct_democratic
     }
     OR = {
-      has_ethic = ethic_materialist
-      has_ethic = ethic_fanatic_materialist
+      is_materialist = yes
     }
   }
   weight = {
@@ -1533,8 +1511,7 @@ gov_totalitarian_regime = {
   possible = {
     has_authority = auth_dictatorial
     OR = {
-      has_ethic = ethic_materialist
-      has_ethic = ethic_fanatic_materialist
+      is_materialist = yes
     }
   }
   weight = {
@@ -1562,8 +1539,7 @@ gov_anarch_capitalism = {
     has_ethic = ethic_fanatic_capitalism
     has_authority = auth_corporate
     OR = {
-      has_ethic = ethic_egalitarian
-      has_ethic = ethic_fanatic_egalitarian
+      is_egalitarian = yes
     }
   }
   weight = {
@@ -1608,8 +1584,7 @@ gov_minarchy = {
     }
     has_ethic = ethic_fanatic_capitalism
     OR = {
-      has_ethic = ethic_egalitarian
-      has_ethic = ethic_fanatic_egalitarian
+      is_egalitarian = yes
     }
   }
   weight = {
@@ -1667,15 +1642,10 @@ gov_trade_league = {
       AND = {
         has_authority = auth_oligarchic
         has_valid_civic = civic_corporate_dominion
-        NOR = {
-          has_ethic = ethic_authoritarian
-          has_ethic = ethic_fanatic_authoritarian
-        }
+        is_authoritarian = no
         OR = {
-          has_ethic = ethic_egalitarian
-          has_ethic = ethic_fanatic_egalitarian
-          has_ethic = ethic_pacifist
-          has_ethic = ethic_fanatic_pacifist
+          is_egalitarian = yes
+          is_pacifist = yes
         }
       }
       AND = {
@@ -1766,13 +1736,10 @@ gov_megacorporation = {
       AND = {
         has_authority = auth_oligarchic
         OR = {
-          has_ethic = ethic_authoritarian
-          has_ethic = ethic_fanatic_authoritarian
+          is_authoritarian = yes
           NOR = {
-            has_ethic = ethic_egalitarian
-            has_ethic = ethic_fanatic_egalitarian
-            has_ethic = ethic_pacifist
-            has_ethic = ethic_fanatic_pacifist
+            is_egalitarian = yes
+            is_pacifist = yes
           }
         }
         has_valid_civic = civic_merchant_guilds
@@ -1902,13 +1869,9 @@ gov_communist_dictatorship = {
     has_authority = auth_dictatorial
     has_ethic = ethic_fanatic_socialism
     OR = {
-      has_ethic = ethic_authoritarian
-      has_ethic = ethic_fanatic_authoritarian
+      is_authoritarian = yes
     }
-    NOR = {
-      has_ethic = ethic_xenophobe
-      has_ethic = ethic_fanatic_xenophobe
-    }
+    is_xenophobe = no
   }
   should_force_rename = yes
   weight = {
@@ -1932,10 +1895,7 @@ gov_enlighted_socialism = {
       has_authority = auth_imperial
     }
     has_ethic = ethic_fanatic_socialism
-    NOR = {
-      has_ethic = ethic_authoritarian
-      has_ethic = ethic_fanatic_authoritarian
-    }
+    is_authoritarian = no
   }
   weight = {
     base = 100
@@ -1954,14 +1914,8 @@ gov_national_socialism = {
     has_ethic = ethic_capitalism
     has_authority = auth_dictatorial
     has_valid_civic = civic_police_state
-    NOR = {
-      has_ethic = ethic_xenophile
-      has_ethic = ethic_fanatic_xenophile
-    }
-    NOR = {
-      has_ethic = ethic_pacifist
-      has_ethic = ethic_fanatic_pacifist
-    }
+    is_xenophile = no
+    is_pacifist = no
   }
   should_force_rename = yes
   election_candidates = {
@@ -2005,10 +1959,7 @@ gov_republican_dictatorship = {
   possible = {
     has_authority = auth_dictatorial
     has_valid_civic = civic_political_pluralism
-    NOR = {
-      has_ethic = ethic_authoritarian
-      has_ethic = ethic_fanatic_authoritarian
-    }
+    is_authoritarian = no
   }
   should_force_rename = yes
   weight = {
@@ -2161,8 +2112,7 @@ gov_liberal_democracy = {
       has_ethic = ethic_fanatic_capitalism
     }
     OR = {
-      has_ethic = ethic_egalitarian
-      has_ethic = ethic_fanatic_egalitarian
+      is_egalitarian = yes
     }
   }
   should_force_rename = yes
@@ -2260,12 +2210,10 @@ gov_strasserism = {
   possible = {
     has_valid_civic = civic_in_perfect
     OR = {
-      has_ethic = ethic_xenophobe
-      has_ethic = ethic_fanatic_xenophobe
+      is_xenophobe = yes
     }
     OR = {
-      has_ethic = ethic_authoritarian
-      has_ethic = ethic_fanatic_authoritarian
+      is_authoritarian = yes
     }
     OR = {
       has_ethic = ethic_socialism
@@ -2371,35 +2319,29 @@ gov_machine_industrial = {
     modifier = {
       factor = 10
       has_valid_civic = civic_machine_rockbreakers
-      NOT = {
-        OR = {
+      NOR = {
           has_valid_civic = civic_machine_introspective
           has_valid_civic = civic_machine_delegated_functions
           has_valid_civic = civic_machine_predictive_analysis
-        }
-      }
+}
     }
     modifier = {
       factor = 10
       has_valid_civic = civic_machine_builder
-      NOT = {
-        OR = {
+      NOR = {
           has_valid_civic = civic_machine_introspective
           has_valid_civic = civic_machine_delegated_functions
           has_valid_civic = civic_machine_predictive_analysis
-        }
-      }
+}
     }
     modifier = {
       factor = 10
       has_valid_civic = civic_machine_replication
-      NOT = {
-        OR = {
+      NOR = {
           has_valid_civic = civic_machine_introspective
           has_valid_civic = civic_machine_delegated_functions
           has_valid_civic = civic_machine_predictive_analysis
-        }
-      }
+}
     }
   }
 }
@@ -2415,35 +2357,29 @@ gov_machine_research = {
     modifier = {
       factor = 10
       has_valid_civic = civic_machine_introspective
-      NOT = {
-        OR = {
+      NOR = {
           has_valid_civic = civic_machine_rockbreakers
           has_valid_civic = civic_machine_builder
           has_valid_civic = civic_machine_replication
-        }
-      }
+}
     }
     modifier = {
       factor = 10
       has_valid_civic = civic_machine_delegated_functions
-      NOT = {
-        OR = {
+      NOR = {
           has_valid_civic = civic_machine_rockbreakers
           has_valid_civic = civic_machine_builder
           has_valid_civic = civic_machine_replication
-        }
-      }
+}
     }
     modifier = {
       factor = 10
       has_valid_civic = civic_machine_predictive_analysis
-      NOT = {
-        OR = {
+      NOR = {
           has_valid_civic = civic_machine_rockbreakers
           has_valid_civic = civic_machine_builder
           has_valid_civic = civic_machine_replication
-        }
-      }
+}
     }
   }
 }

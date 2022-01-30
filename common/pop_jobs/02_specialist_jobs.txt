@@ -2953,10 +2953,8 @@ necro_apprentice = {
 			planet = {
 				NOT = {
 					any_owned_pop = {
-						NOT = {
+						NOR = {
 							is_same_value = root
-						}
-						NOT = {
 							has_job = necro_apprentice
 						}
 						species = {
